@@ -11,6 +11,26 @@
 # Használd az előbb megírt függvényt!
 # Például: ? 2005 Nem szökőév. ? 2000 Szökőév. ? 1980 Szökőév. ? 1900 Nem szökőév.
 
+# saját megoldás 1
+input_year = int(input("Give me a year you want to check if it is a leap year or not. "))
+if input_year % 400 == 0:
+    print("leap year")
+else:
+    if input_year % 4 ==0 and input_year % 100 != 0:
+        print("leap year")
+    else:
+        print("not a leap year")
+
+# saját megoldás 2 (visszatérési érték: logikai változó)
+input_year = int(input("Give me a year you want to check if it is a leap year or not. "))
+if input_year % 400 == 0:
+    print(True)
+else:
+    if input_year % 4 ==0 and input_year % 100 != 0:
+        print("True")
+    else:
+        print("False")
+
 # Válaszok:
 # 2005: Nem szökőév.
 # 2000 Szökőév.
@@ -20,46 +40,3 @@
 # Ez alapján: https://docs.microsoft.com/en-us/office/troubleshoot/excel/determine-a-leap-year
 # The following years are not leap years: 1700, 1800, 1900, 2100, 2200, 2300, 2500, 2600
 # The following years are leap years: 1600, 2000, 2400
-
-# input_year = int(input("Give me a year you want to check if it is a leap year or not. "))
-# a = 0
-# if input_year % 4 == 0:
-#     a = 1
-#     print("4-gyel osztható")
-# if input_year % 100 == 0:
-#     a = 1
-#     print("osztható 100-zal")
-# if input_year % 400 != 0:
-#     a = 1
-#     print("Nem osztható 400-zal")
-# if a == 0:
-
-
-
-# if input_year % 4 == 0 and input_year % 100 != 0 :
-#     print("A leap year")
-# elif input_year % 4 == 0 and input_year % 100 != 0 and input_year % 400 == 0:
-#     rint("A leap year.")
-# else:
-#     print("Not a leap year")
-
-
-# # saját megoldás 1
-# input_year = int(input("Give me a year you want to check if it is a leap year or not. "))
-# if input_year % 400 == 0:
-#     print("leap year")
-# else:
-#     if input_year % 4 ==0 and input_year % 100 != 0:
-#         print("leap year")
-#     else:
-#         print("not a leap year")
-
-# saját megoldás 2
-input_year = int(input("Give me a year you want to check if it is a leap year or not. "))
-if input_year % 400 == 0:
-    print(True)
-else:
-    if input_year % 4 ==0 and input_year % 100 != 0:
-        print("True")
-    else:
-        print("False")
