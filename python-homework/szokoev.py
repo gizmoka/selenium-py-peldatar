@@ -31,6 +31,21 @@ else:
     else:
         print("False")
 
+
+# függvénnyel:
+def checkYear(year):
+    import calendar
+    return (calendar.isleap(year))
+
+year = int(input("please give a year: "))
+if (checkYear(year)):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+# source: https://www.geeksforgeeks.org/program-check-given-year-leap-year/
+
+
 # Válaszok:
 # 2005: Nem szökőév.
 # 2000 Szökőév.
