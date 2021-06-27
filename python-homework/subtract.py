@@ -4,6 +4,6 @@
 # Kérjünk be két számot, és írjuk ki a különgségüket.
 # Használd az input() és print() beépített függvényeket.
 
-a = int(input("Adj meg egy számot! "))
-b = int(input("Adj meg egy másik számot! És én kiszámolom a kettő különbségét. Mi a számod? "))
+a = int(input("Adj meg egy egész számot! "))
+b = int(input("Adj meg egy másik egész számot! És én kiszámolom a kettő különbségét. Mi a számod? "))
 print(f"A különbségük: {a - b}.")
