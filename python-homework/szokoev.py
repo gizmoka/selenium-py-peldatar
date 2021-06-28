@@ -12,6 +12,7 @@
 # Például: ? 2005 Nem szökőév. ? 2000 Szökőév. ? 1980 Szökőév. ? 1900 Nem szökőév.
 
 # saját megoldás 2 (visszatérési érték: logikai változó) try-exception-nel!!!
+
 try:
     input_year = int(input("Give me a year you want to check if it is a leap year or not. "))
 
