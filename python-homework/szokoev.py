@@ -42,9 +42,22 @@ if (checkYear(year)):
     print("Leap Year")
 else:
     print("Not a Leap Year")
-
 # source: https://www.geeksforgeeks.org/program-check-given-year-leap-year/
 
+# 4. megoldás
+
+year = int(input("Enter a year: "))
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
+else:
+   print("{0} is not a leap year".format(year))
+# source: https://www.javatpoint.com/python-check-leap-year
 
 # Válaszok:
 # 2005: Nem szökőév.
