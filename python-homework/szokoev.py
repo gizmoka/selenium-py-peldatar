@@ -11,6 +11,28 @@
 # Használd az előbb megírt függvényt!
 # Például: ? 2005 Nem szökőév. ? 2000 Szökőév. ? 1980 Szökőév. ? 1900 Nem szökőév.
 
+# saját megoldás 2 (logikai változó mint visszatérési érték) FÜGGVÉNYKÉNT try-exceptionnel
+
+
+try:
+    def leapYearCheck(year):
+        if input_year % 400 == 0:
+            print(True)
+        else:
+            if input_year % 4 == 0 and input_year % 100 != 0:
+                print("True")
+            else:
+                print("False")
+
+
+    input_year = int(input("Give me a year you want to check if it is a leap year or not. "))
+    leapYearCheck(input_year)
+except ValueError:
+    print("Please, provide an integer.")
+finally:
+    print("Have a nice day.")
+
+
 # saját megoldás 2 (visszatérési érték: logikai változó) try-exception-nel!!!
 
 try:
